@@ -1,0 +1,168 @@
+.contact-section {
+    background: var(--paper);
+}
+
+
+.contact-wrap {
+
+    background: var(--chalkboard);
+
+    border-radius: var(--radius);
+
+    padding: 56px;
+
+    color: var(--paper);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 48px;
+
+}
+
+
+.contact-wrap h2 {
+    color: var(--paper);
+}
+
+
+.contact-wrap p {
+    color: #DCE3DC;
+    margin-bottom: 20px;
+}
+
+
+.contact-wrap .eyebrow {
+    color: var(--pencil);
+}
+
+
+.info-line {
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+    margin-bottom: 14px;
+
+    font-size: 1rem;
+
+}
+
+
+.info-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: var(--pencil);
+
+    flex-shrink: 0;
+
+}
+
+
+.field {
+    margin-bottom: 16px;
+}
+
+
+.field label {
+
+    display: block;
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 6px;
+
+}
+
+
+.field input,
+.field textarea {
+
+    width: 100%;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    font-family:
+        "Nunito",
+        sans-serif;
+
+    background: var(--paper);
+
+    color: var(--ink);
+
+    font-size: 0.95rem;
+
+}
+
+
+.field textarea {
+
+    resize: vertical;
+
+    min-height: 90px;
+
+}
+
+
+.contact-wrap .btn-primary {
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+.sent-message {
+
+    display: none;
+
+    margin-top: 12px;
+
+    color: var(--pencil) !important;
+
+}
+
+
+@media (max-width: 860px) {
+
+    .contact-wrap {
+
+        grid-template-columns: 1fr;
+
+        padding: 32px;
+
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .contact-wrap {
+        padding: 25px 18px;
+    }
+
+
+    .info-line {
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,173 @@
+.resources-section {
+
+    background: var(--paper-dark);
+
+}
+
+
+.folder-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px, 1fr)
+        );
+
+    gap: 26px;
+
+}
+
+
+.folder {
+
+    background: var(--paper);
+
+    border-radius:
+        0
+        var(--radius)
+        var(--radius)
+        var(--radius);
+
+    box-shadow: var(--shadow);
+
+    position: relative;
+
+    padding: 26px 22px 22px;
+
+    transition:
+        transform 0.2s;
+
+    border-top:
+        3px solid
+        var(--tab-color);
+
+}
+
+
+.folder:hover {
+
+    transform:
+        translateY(-6px);
+
+}
+
+
+.folder-tab {
+
+    position: absolute;
+
+    top: -18px;
+
+    left: 20px;
+
+    background:
+        var(--tab-color);
+
+    color: var(--paper);
+
+    font-family:
+        "Patrick Hand",
+        cursive;
+
+    font-size: 0.95rem;
+
+    padding: 5px 14px;
+
+    border-radius:
+        8px 8px 0 0;
+
+}
+
+
+.folder h3 {
+
+    color: var(--chalkboard);
+
+    font-size: 1.35rem;
+
+    margin: 10px 0 8px;
+
+}
+
+
+.folder p {
+
+    color: var(--ink-soft);
+
+    font-size: 0.95rem;
+
+    margin-bottom: 14px;
+
+}
+
+
+.folder ul {
+
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.folder li a {
+
+    font-size: 0.92rem;
+
+    color: var(--chalkboard);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 6px 0;
+
+    border-bottom:
+        1px dotted
+        rgba(43,43,38,0.15);
+
+}
+
+
+.folder li a:hover {
+
+    color: var(--coral);
+
+}
+
+
+.folder li a::before {
+
+    content: "✎";
+
+    color: var(--tab-color);
+
+}
+
+
+.folder-coral {
+    --tab-color: var(--coral);
+}
+
+
+.folder-sky {
+    --tab-color: var(--sky);
+}
+
+
+.folder-pencil {
+    --tab-color: var(--pencil);
+}
+
+
+.folder-board {
+    --tab-color: var(--chalkboard-light);
+}

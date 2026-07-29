@@ -1,0 +1,131 @@
+.about-section {
+    background: var(--paper);
+}
+
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 56px;
+
+    align-items: start;
+
+}
+
+
+.about-card {
+
+    background: var(--paper-dark);
+
+    border-radius: var(--radius);
+
+    padding: 28px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.about-card h3 {
+
+    color: var(--chalkboard);
+
+    font-size: 1.4rem;
+
+    margin-bottom: 10px;
+
+}
+
+
+.about-card p {
+
+    color: var(--ink-soft);
+
+}
+
+
+.about-card p + p {
+
+    margin-top: 14px;
+
+}
+
+
+.timeline {
+
+    list-style: none;
+
+    border-left:
+        3px dashed var(--sky);
+
+    padding-left: 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 26px;
+
+}
+
+
+.timeline li {
+    position: relative;
+}
+
+
+.timeline li::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -35px;
+
+    top: 4px;
+
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: var(--coral);
+
+    border: 3px solid var(--paper);
+
+}
+
+
+.timeline .yr {
+
+    font-family: "Patrick Hand", cursive;
+
+    color: var(--coral);
+
+    font-size: 1.1rem;
+
+    display: block;
+
+}
+
+
+.timeline .desc {
+
+    color: var(--ink-soft);
+
+    font-size: 0.98rem;
+
+}
+
+
+@media (max-width: 860px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

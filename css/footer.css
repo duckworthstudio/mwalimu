@@ -1,0 +1,27 @@
+footer {
+
+    text-align: center;
+
+    padding: 36px 24px;
+
+    color: var(--ink-soft);
+
+    font-size: 0.9rem;
+
+}
+
+
+footer .hand {
+
+    color: var(--coral);
+
+    font-size: 1.1rem;
+
+}
+
+
+.footer-copyright {
+
+    margin-top: 6px;
+
+}

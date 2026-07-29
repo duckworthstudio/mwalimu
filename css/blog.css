@@ -1,0 +1,126 @@
+.blog-section {
+    background: var(--paper);
+}
+
+
+.blog-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.blog-item {
+
+    display: grid;
+
+    grid-template-columns: 110px 1fr;
+
+    gap: 24px;
+
+    padding: 26px 0;
+
+    border-bottom:
+        1px dashed
+        rgba(43,43,38,0.2);
+
+}
+
+
+.blog-date {
+
+    display: block;
+
+    font-family: "Patrick Hand", cursive;
+
+    color: var(--coral);
+
+    font-size: 1.1rem;
+
+    text-align: center;
+
+    background: var(--paper-dark);
+
+    border-radius: 10px;
+
+    padding: 12px 6px;
+
+    height: fit-content;
+
+}
+
+
+.blog-date .day {
+
+    display: block;
+
+    font-size: 1.7rem;
+
+    color: var(--chalkboard);
+
+}
+
+
+.blog-item h3 {
+
+    color: var(--chalkboard);
+
+    font-size: 1.3rem;
+
+    margin-bottom: 6px;
+
+}
+
+
+.blog-item p {
+
+    color: var(--ink-soft);
+
+    font-size: 0.97rem;
+
+}
+
+
+.tag {
+
+    display: inline-block;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    background: var(--sky);
+
+    color: var(--paper);
+
+    padding: 3px 10px;
+
+    border-radius: 999px;
+
+    margin-bottom: 8px;
+
+}
+
+
+@media (max-width: 480px) {
+
+    .blog-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+    }
+
+
+    .blog-date {
+        width: 90px;
+    }
+
+}
